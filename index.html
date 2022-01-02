@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" src="index.css">
+    </head>
 
-<head>
-    <link rel="stylesheet" src="index.css">
-</head>
+    <body>
+        <div id="input-container">
+            <lable>Item Name: <input type="text" id="name-input-field"></lable>
+            <lable>Item Price: <input type="number" id="price-input-field"></lable>
+            <button onclick="addItemToList()">Add Item</button>
+        </div>
 
-<body>
-    <div id="input-container">
-        <lable>Item Name: <input type="text" id="name-input-field"></lable>
-        <lable>Item Price: <input type="number" id="price-input-field"></lable>
-        <button onclick="addItemToList()">Add Item</button>
-    </div>
+        <br>
 
-    <br>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Current Items to Sell</th>
-            </tr>
-        </thead>
-        <tbody id="item-display-table">
-            <tr>
-                <td>Item name</td>
-                <td>Item Price</td>
-            </tr>
-        </tbody>
-    </table>
-    <script src="index.js"></script>
-</body>
-
+        <table>
+            <thead>
+                <tr>
+                    <th>Current Items to Sell</th>
+                </tr>
+            </thead>
+            <tbody id="item-display-table">
+                <tr>
+                    <td>Item name</td>
+                    <td>Item Price</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="index.js"></script>
+    </body>
 </html>
