@@ -45,6 +45,7 @@ function addItemToList() {
   adding_button.classList = "adding-btn";
   adding_button.textContent = "+";
   adding_button.onclick = function addingButtonPressed() {
+    console.log("Adding Button Pressed");
     itemTotal++;
     itemTotalLabel.textContent = itemTotal;
   };
@@ -59,6 +60,7 @@ function addItemToList() {
   subtract_button.classList = "subtract-btn";
   subtract_button.textContent = "-";
   subtract_button.onclick = function subtractButtonPressed() {
+    console.log("Subtract Button Pressed");
     itemTotal--;
     itemTotalLabel.textContent = itemTotal;
   };
