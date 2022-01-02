@@ -22,11 +22,48 @@ function addItemToList() {
   item_price.classList = "item-price-column"; //used for css
   item_price.textContent = itemPrice;
 
+  //Displaying the total
+  let item_total = document.createElement("td");
+  item_total.classList = "item-total-column";
+
+  let itemTotalLabel = document.createElement("label");
+  itemTotalLabel.classList = "itm-total";
+  itemTotalLabel.textContent = 0;
+  item_total.appendChild(itemTotalLabel);
+
+  //Making the adding and subtracting button
+
+  //Adding Button --------------------------------------------------------------
+  let adding_Button_Column = document.createElement("td");
+  adding_Button_Column.classList = "adding-btn-column";
+
+  let adding_button = document.createElement("button");
+  adding_button.classList = "adding-btn";
+  adding_button.textContent = "+";
+
+  adding_Button_Column.appendChild(adding_button);
+
+  //Subtracting Button --------------------------------------------------------------
+  let subtract_Button_Column = document.createElement("td");
+  subtract_Button_Column.classList = "subtract-btn-column";
+
+  let subtract_button = document.createElement("button");
+  subtract_button.classList = "subtract-btn";
+  subtract_button.textContent = "-";
+
+  subtract_Button_Column.appendChild(subtract_button);
+
+  //Adding Columns to row -----------------------------------------------------------
   item_row.appendChild(item_name);
   item_row.appendChild(item_price);
+  item_row.appendChild(item_total);
+  item_row.appendChild(adding_Button_Column);
+  item_row.appendChild(subtract_Button_Column);
 
+  //Adds the row to the table -------------------------------------------------------
   displayContainer.appendChild(item_row);
 
+  //Clears all information in the input field
   itemNameElement.value = "";
   itemPriceElement.value = "";
 }
