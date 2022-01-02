@@ -23,12 +23,16 @@ function addItemToList() {
   item_price.textContent = itemPrice;
 
   //Displaying the total
+
+  let itemTotal = 0;
+
   let item_total = document.createElement("td");
   item_total.classList = "item-total-column";
 
   let itemTotalLabel = document.createElement("label");
   itemTotalLabel.classList = "itm-total";
-  itemTotalLabel.textContent = 0;
+  itemTotalLabel.id = "itm-total-label";
+  itemTotalLabel.textContent = itemTotal;
   item_total.appendChild(itemTotalLabel);
 
   //Making the adding and subtracting button
@@ -40,6 +44,10 @@ function addItemToList() {
   let adding_button = document.createElement("button");
   adding_button.classList = "adding-btn";
   adding_button.textContent = "+";
+  adding_button.onclick = function addingButtonPressed() {
+    itemTotal++;
+    itemTotalLabel.textContent = itemTotal;
+  };
 
   adding_Button_Column.appendChild(adding_button);
 
@@ -50,6 +58,10 @@ function addItemToList() {
   let subtract_button = document.createElement("button");
   subtract_button.classList = "subtract-btn";
   subtract_button.textContent = "-";
+  subtract_button.onclick = function subtractButtonPressed() {
+    itemTotal--;
+    itemTotalLabel.textContent = itemTotal;
+  };
 
   subtract_Button_Column.appendChild(subtract_button);
 
