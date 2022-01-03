@@ -1,3 +1,7 @@
+function addDefaultItems(){
+  
+}
+
 function addItemToList() {
   let itemNameElement = document.getElementById("name-input-field");
   let itemPriceElement = document.getElementById("price-input-field");
