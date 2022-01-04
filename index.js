@@ -151,17 +151,17 @@ function addItemToList() {
 }
 
 
-addDefaultItems("Snapple", 1.50);
-addDefaultItems("Vitamin Water", 1.50);
-addDefaultItems("Gatorade", 1.00);
-addDefaultItems("Water", 0.50);
-addDefaultItems("Soda", 1.00);
+addDefaultItems("Snapple", "1.50");
+addDefaultItems("Vitamin Water", "1.50");
+addDefaultItems("Gatorade", "1.00");
+addDefaultItems("Water", "0.50");
+addDefaultItems("Soda", "1.00");
 
-addDefaultItems("Hot Chips", 1.50);
-addDefaultItems("Chips", 1.00);
+addDefaultItems("Hot Chips", "1.50");
+addDefaultItems("Chips", "1.00");
 
-addDefaultItems("Granola Bar", 0.50);
-addDefaultItems("Candy", 1.50);
+addDefaultItems("Granola Bar", "0.50");
+addDefaultItems("Candy", "1.50");
 
 /*
 Hot Chips - 1.50

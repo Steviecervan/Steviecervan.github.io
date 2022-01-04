@@ -5,31 +5,31 @@
     </head>
 
     <body>
-        <div id="input-container">
+        <div id="tracking-container">
             <h3>Add Item</h3>
             <label>Item Name: <input type="text" id="name-input-field"></label>
             <label>Item Price: <input type="number" id="price-input-field"></label>
             <button onclick="addItemToList()">Add Item</button>
+            <table id="display-items">
+                <thead>
+                    <tr>
+                        <th><h3>Current Items Selling</h3></th>
+                    </tr>
+                </thead>
+                <tbody id="item-display-table">
+                    <tr>
+                        <td>Item Name</td>
+                        <td>Item Price</td>
+                        <td>Item Total</td>
+                        <td>Add</td>
+                        <td>Subtract</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <br>
-
-        <table id="display-items">
-            <thead>
-                <tr>
-                    <th><h3>Current Items Selling</h3></th>
-                </tr>
-            </thead>
-            <tbody id="item-display-table">
-                <tr>
-                    <td>Item Name</td>
-                    <td>Item Price</td>
-                    <td>Item Total</td>
-                    <td>Add</td>
-                    <td>Subtract</td>
-                </tr>
-            </tbody>
-        </table>
+        <div>
+            <h3>Calculation System</h3>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
