@@ -5,7 +5,7 @@
     </head>
 
     <body>
-        <div id="tracking-container">
+        <div id="tracking-container" class="main-containers">
             <h3>Add Item</h3>
             <label>Item Name: <input type="text" id="name-input-field"></label>
             <label>Item Price: <input type="number" id="price-input-field"></label>
@@ -24,11 +24,21 @@
                         <td>Add</td>
                         <td>Subtract</td>
                     </tr>
-                </tbody>
+                </tbody> 
             </table>
         </div>
-        <div>
+        <div class="main-containers">
             <h3>Calculation System</h3>
+            <div class="calculation-containers">
+                <table id="total-table">
+                    
+                </table>
+            </div>
+            <div class="calculation-containers">
+                <table id="button-table">
+
+                </table>
+            </div>
         </div>
         <script src="index.js"></script>
     </body>

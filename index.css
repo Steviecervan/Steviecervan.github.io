@@ -3,10 +3,28 @@ th, td {
     text-align: left;  
     padding-bottom: 5px;  
 }
-div{
+.main-containers{
     display: inline;
     float: left;
-    padding-left: 20px;
+    width: 50%;
+}
+
+.calculation-containers{
+    display: inline;
+    float: left;
+    height: 650px;
+}
+
+#totalArea{
+    width: 250px;
+    background-color: red; 
+    height: 100%;   
+}
+
+#itemButtons{
+    background-color: blue;
+    width: 500px;
+    height: 100%;
 }
 
 .adding-btn {
